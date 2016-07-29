@@ -1,0 +1,29 @@
+{
+    "freeFoodApp": {
+        "provider" : {
+            "home": {
+                "title": "Providers",
+                "createLabel": "Crear nuevo Provider",
+                "createOrEditLabel": "Crear o editar Provider",
+                "search": "Search for Provider"
+            },
+            "created": "Un nuevo Provider ha sido creado con el identificador {{ param }}",
+            "updated": "Un Provider ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Provider ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Provider {{ id }}?"
+            },
+            "detail": {
+                "title": "Provider"
+            },
+            "name": "Name",
+            "responsiblePerson": "Responsible Person",
+            "email": "Email",
+            "phone": "Phone",
+            "serviceHours": "Service Hours",
+            "address": "Address",
+            "facebook": "Facebook",
+            "whatsapp": "Whatsapp"
+        }
+    }
+}

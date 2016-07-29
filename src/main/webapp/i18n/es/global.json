@@ -7,6 +7,12 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entidades",
+                "weekMenu": "Week Menu",
+                "dayMenu": "Day Menu",
+                "menuItem": "Menu Item",
+                "provider": "Provider",
+                "menu": "Menu",
+                "menuOrder": "Menu Order",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

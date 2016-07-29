@@ -1,0 +1,78 @@
+{
+  "relationships": [],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength",
+        "maxlength"
+      ],
+      "fieldValidateRulesMinlength": 2,
+      "fieldValidateRulesMaxlength": 128
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "responsiblePerson",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength",
+        "maxlength"
+      ],
+      "fieldValidateRulesMinlength": 2,
+      "fieldValidateRulesMaxlength": 128
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength",
+        "maxlength"
+      ],
+      "fieldValidateRulesMinlength": 2,
+      "fieldValidateRulesMaxlength": 128
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "phone",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength",
+        "maxlength"
+      ],
+      "fieldValidateRulesMinlength": 2,
+      "fieldValidateRulesMaxlength": 128
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "serviceHours",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 7,
+      "fieldName": "facebook",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 8,
+      "fieldName": "whatsapp",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160729212102",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "provider"
+}

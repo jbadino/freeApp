@@ -1,0 +1,17 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipType": "one-to-many",
+      "relationshipName": "dayMenues",
+      "otherEntityName": "dayMenu",
+      "otherEntityRelationshipName": "weekMenu"
+    }
+  ],
+  "fields": [],
+  "changelogDate": "20160729212159",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "week_menu"
+}

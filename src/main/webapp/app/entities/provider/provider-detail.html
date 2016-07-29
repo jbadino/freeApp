@@ -1,0 +1,51 @@
+
+<div>
+    <h2><span translate="freeFoodApp.provider.detail.title">Provider</span> {{vm.provider.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="freeFoodApp.provider.name">Name</span></dt>
+        <dd>
+            <span>{{vm.provider.name}}</span>
+        </dd>
+        <dt><span translate="freeFoodApp.provider.responsiblePerson">Responsible Person</span></dt>
+        <dd>
+            <span>{{vm.provider.responsiblePerson}}</span>
+        </dd>
+        <dt><span translate="freeFoodApp.provider.email">Email</span></dt>
+        <dd>
+            <span>{{vm.provider.email}}</span>
+        </dd>
+        <dt><span translate="freeFoodApp.provider.phone">Phone</span></dt>
+        <dd>
+            <span>{{vm.provider.phone}}</span>
+        </dd>
+        <dt><span translate="freeFoodApp.provider.serviceHours">Service Hours</span></dt>
+        <dd>
+            <span>{{vm.provider.serviceHours}}</span>
+        </dd>
+        <dt><span translate="freeFoodApp.provider.address">Address</span></dt>
+        <dd>
+            <span>{{vm.provider.address}}</span>
+        </dd>
+        <dt><span translate="freeFoodApp.provider.facebook">Facebook</span></dt>
+        <dd>
+            <span>{{vm.provider.facebook}}</span>
+        </dd>
+        <dt><span translate="freeFoodApp.provider.whatsapp">Whatsapp</span></dt>
+        <dd>
+            <span>{{vm.provider.whatsapp}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="provider-detail.edit({id:vm.provider.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

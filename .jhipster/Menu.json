@@ -1,0 +1,47 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipType": "one-to-one",
+      "relationshipName": "weekMenu",
+      "otherEntityName": "weekMenu",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "menu"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipType": "one-to-one",
+      "relationshipName": "provider",
+      "otherEntityName": "provider",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "menu"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "weekDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "promotion",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160729212158",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "menu"
+}

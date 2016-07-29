@@ -1,0 +1,24 @@
+{
+    "freeFoodApp": {
+        "menuOrder" : {
+            "home": {
+                "title": "Menu Orders",
+                "createLabel": "Crear nuevo Menu Order",
+                "createOrEditLabel": "Crear o editar Menu Order",
+                "search": "Search for Menu Order"
+            },
+            "created": "Un nuevo Menu Order ha sido creado con el identificador {{ param }}",
+            "updated": "Un Menu Order ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Menu Order ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Menu Order {{ id }}?"
+            },
+            "detail": {
+                "title": "Menu Order"
+            },
+            "description": "Description",
+            "weekMenu": "Week Menu",
+            "user": "User"
+        }
+    }
+}

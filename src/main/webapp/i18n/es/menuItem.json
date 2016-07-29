@@ -1,0 +1,24 @@
+{
+    "freeFoodApp": {
+        "menuItem" : {
+            "home": {
+                "title": "Menu Items",
+                "createLabel": "Crear nuevo Menu Item",
+                "createOrEditLabel": "Crear o editar Menu Item",
+                "search": "Search for Menu Item"
+            },
+            "created": "Un nuevo Menu Item ha sido creado con el identificador {{ param }}",
+            "updated": "Un Menu Item ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Menu Item ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Menu Item {{ id }}?"
+            },
+            "detail": {
+                "title": "Menu Item"
+            },
+            "name": "Name",
+            "description": "Description",
+            "dayMenu": "Day Menu"
+        }
+    }
+}

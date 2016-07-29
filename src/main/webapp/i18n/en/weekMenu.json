@@ -1,0 +1,22 @@
+{
+    "freeFoodApp": {
+        "weekMenu" : {
+            "home": {
+                "title": "Week Menus",
+                "createLabel": "Create a new Week Menu",
+                "createOrEditLabel": "Create or edit a Week Menu",
+                "search": "Search for Week Menu"
+            },
+            "created": "A new Week Menu is created with identifier {{ param }}",
+            "updated": "A Week Menu is updated with identifier {{ param }}",
+            "deleted": "A Week Menu is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Week Menu {{ id }}?"
+            },
+            "detail": {
+                "title": "Week Menu"
+            },
+            "dayMenues": "Day Menues"
+        }
+    }
+}

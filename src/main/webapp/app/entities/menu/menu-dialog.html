@@ -1,0 +1,66 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myMenuLabel" translate="freeFoodApp.menu.home.createOrEditLabel">Create or edit a Menu</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.menu.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.menu.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="freeFoodApp.menu.weekDate" for="field_weekDate">Week Date</label>
+                <div class="input-group">
+                    <input id="field_weekDate" type="text" class="form-control" name="weekDate" uib-datepicker-popup="{{dateformat}}" ng-model="vm.menu.weekDate" is-open="vm.datePickerOpenStatus.weekDate"
+                    required/>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('weekDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+            <div ng-show="editForm.weekDate.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.weekDate.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="freeFoodApp.menu.description" for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                    ng-model="vm.menu.description"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="freeFoodApp.menu.promotion" for="field_promotion">Promotion</label>
+            <input type="text" class="form-control" name="promotion" id="field_promotion"
+                    ng-model="vm.menu.promotion"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="freeFoodApp.menu.weekMenu" for="field_weekMenu">Week Menu</label>
+            <select class="form-control" id="field_weekMenu" name="weekMenu" ng-model="vm.menu.weekMenu" ng-options="weekMenu as weekMenu.id for weekMenu in vm.weekmenus | orderBy:'id' track by weekMenu.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="freeFoodApp.menu.provider" for="field_provider">Provider</label>
+            <select class="form-control" id="field_provider" name="provider" ng-model="vm.menu.provider" ng-options="provider as provider.id for provider in vm.providers | orderBy:'id' track by provider.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

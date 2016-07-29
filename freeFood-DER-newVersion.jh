@@ -1,0 +1,58 @@
+
+entity Menu {
+    weekDate LocalDate required,
+    description String,
+    promotion String
+}
+
+entity WeekMenu { }
+
+entity DayMenu {
+    name String required minlength(2) maxlength(10)
+}
+
+entity MenuItem {
+    name String required minlength(2) maxlength(128),
+    description String
+}
+
+entity Provider {
+    name String required minlength(2) maxlength(128),
+    responsiblePerson String required minlength(2) maxlength(128),
+    email String required minlength(2) maxlength(128),
+    phone String required minlength(2) maxlength(128),
+    serviceHours String,
+    address String, 
+    facebook String,
+    whatsapp String
+}
+
+entity MenuOrder {
+    description String
+}
+
+relationship OneToMany {
+    DayMenu{menuItem} to MenuItem
+}
+
+relationship OneToMany {
+    WeekMenu{dayMenues} to DayMenu
+}
+
+relationship OneToOne {
+    Menu{weekMenu} to WeekMenu
+}
+
+relationship OneToOne {
+    Menu{provider} to Provider
+}
+
+relationship OneToOne {
+    MenuOrder{weekMenu} to WeekMenu
+}
+
+relationship OneToOne {
+    MenuOrder{user} to User
+}
+
+paginate Provider, Menu, WeekMenu, DayMenu, MenuItem, MenuOrder with Pagination

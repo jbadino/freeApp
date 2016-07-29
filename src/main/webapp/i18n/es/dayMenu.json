@@ -1,0 +1,24 @@
+{
+    "freeFoodApp": {
+        "dayMenu" : {
+            "home": {
+                "title": "Day Menus",
+                "createLabel": "Crear nuevo Day Menu",
+                "createOrEditLabel": "Crear o editar Day Menu",
+                "search": "Search for Day Menu"
+            },
+            "created": "Un nuevo Day Menu ha sido creado con el identificador {{ param }}",
+            "updated": "Un Day Menu ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Day Menu ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Day Menu {{ id }}?"
+            },
+            "detail": {
+                "title": "Day Menu"
+            },
+            "name": "Name",
+            "weekMenu": "Week Menu",
+            "menuItem": "Menu Item"
+        }
+    }
+}

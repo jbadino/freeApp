@@ -1,0 +1,62 @@
+<div>
+    <h2 translate="freeFoodApp.menuItem.home.title">Menu Items</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="menu-item.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  translate="freeFoodApp.menuItem.home.createLabel">
+                        Create new Menu Item
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="freeFoodApp.menuItem.name">Name</span></th>
+                    <th><span translate="freeFoodApp.menuItem.description">Description</span></th>
+                    <th><span translate="freeFoodApp.menuItem.dayMenu">Day Menu</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="menuItem in vm.menuItems track by menuItem.id">
+                    <td><a ui-sref="menu-item-detail({id:menuItem.id})">{{menuItem.id}}</a></td>
+                    <td>{{menuItem.name}}</td>
+                    <td>{{menuItem.description}}</td>
+                    <td>
+                        <a ui-sref="day-menu-detail({id:menuItem.dayMenu.id})">{{menuItem.dayMenu.id}}</a>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="menu-item-detail({id:menuItem.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="menu-item.edit({id:menuItem.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="menu-item.delete({id:menuItem.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
